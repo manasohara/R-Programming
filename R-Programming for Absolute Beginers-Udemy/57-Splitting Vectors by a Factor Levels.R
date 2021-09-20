@@ -1,0 +1,11 @@
+sal<-c(1000,1800,2500,1750,1900,2700,2100,1100)
+categ<-factor(c("W","MM","TM","MM","W","TM","MM","W"))
+split(sal,categ)
+s<-split(sal,categ)
+s
+class(s)
+typeof(s)
+names(s)
+gen<-factor(c("M","F","M","F","M","F","M","F"))
+s<-split(sal,list(categ,gen))
+s

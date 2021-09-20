@@ -1,0 +1,13 @@
+sal<-c(1000,1800,2500,1750,1900,2700,2100,1100)
+categ<-factor(c("W","MM","TM","MM","W","TM","MM","W"))
+gen<-factor(c("M","F","M","F","M","F","M","F"))
+b<-by(sal,categ,mean)
+class(b)
+typeof(b)
+b[2]
+b<-as.list(b)
+b
+class(b)
+names(b)
+b$MM
+b$TM
